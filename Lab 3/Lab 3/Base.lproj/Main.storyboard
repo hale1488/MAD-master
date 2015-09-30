@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="V6z-EV-lHd">
+                                <rect key="frame" x="413" y="102" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="89X-2x-Vug"/>
+                                    <constraint firstAttribute="width" constant="50" id="NOw-uT-6C3"/>
+                                    <constraint firstAttribute="height" constant="30" id="RJv-Hq-8Od"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="SQx-xV-IZt">
+                                <rect key="frame" x="413" y="151" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E4m-oQ-2hd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="agt-yA-SHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="49B-SR-gzp">
+                                <rect key="frame" x="413" y="201" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ils-Cu-XQK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="al6-5R-PUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fairy Dust Travel Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF4-Iw-uVo">
+                                <rect key="frame" x="29" y="105" width="234" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aXN-hg-Q9t"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="oeQ-6y-0um"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fairy Dust Insurance Percent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dve-hv-wRJ">
+                                <rect key="frame" x="29" y="154" width="222" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="eBQ-NG-wZy"/>
+                                    <constraint firstAttribute="height" constant="21" id="th2-wO-3Ed"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number of Fairies Traveling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-sU-ARa">
+                                <rect key="frame" x="29" y="204" width="209" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rWv-be-fKY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5Z-mI-GOJ">
+                                <rect key="frame" x="315" y="255" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fairy Dust Travel Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xt-6k-Kdp">
+                                <rect key="frame" x="195" y="28" width="211" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="WMi-dV-1AS"/>
+                                    <constraint firstAttribute="width" secondItem="4xt-6k-Kdp" secondAttribute="height" multiplier="211:21" id="eLx-4v-Huk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97v-n9-od3">
+                                <rect key="frame" x="315" y="284" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fairy Dust Insurance Due" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cih-c1-ahd">
+                                <rect key="frame" x="29" y="256" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Fairy Dust" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmX-vn-gf2">
+                                <rect key="frame" x="29" y="285" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Fairy Dust Per Fairy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6d-J9-dDm">
+                                <rect key="frame" x="29" y="314" width="193" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRy-do-zby">
+                                <rect key="frame" x="315" y="314" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77821922539999999" green="0.7648818302" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NF4-Iw-uVo" firstAttribute="top" secondItem="4xt-6k-Kdp" secondAttribute="bottom" constant="30" id="12T-cN-XdG"/>
+                            <constraint firstItem="hgP-sU-ARa" firstAttribute="top" secondItem="dve-hv-wRJ" secondAttribute="bottom" constant="29" id="2rR-0S-89A"/>
+                            <constraint firstItem="49B-SR-gzp" firstAttribute="trailing" secondItem="SQx-xV-IZt" secondAttribute="trailing" id="3xn-kp-gZ6"/>
+                            <constraint firstItem="e6d-J9-dDm" firstAttribute="top" secondItem="mmX-vn-gf2" secondAttribute="bottom" constant="8" id="8pV-TM-kPv"/>
+                            <constraint firstItem="dve-hv-wRJ" firstAttribute="top" secondItem="NF4-Iw-uVo" secondAttribute="bottom" constant="28" id="A3y-el-CKo"/>
+                            <constraint firstItem="q5Z-mI-GOJ" firstAttribute="leading" secondItem="cih-c1-ahd" secondAttribute="trailing" constant="40" id="G40-ZH-7IV"/>
+                            <constraint firstItem="SQx-xV-IZt" firstAttribute="top" secondItem="V6z-EV-lHd" secondAttribute="bottom" constant="20" id="HhA-ju-9nL"/>
+                            <constraint firstItem="mmX-vn-gf2" firstAttribute="leading" secondItem="cih-c1-ahd" secondAttribute="leading" id="J3O-4x-3YB"/>
+                            <constraint firstItem="4xt-6k-Kdp" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="L0e-aC-kIt"/>
+                            <constraint firstItem="49B-SR-gzp" firstAttribute="top" secondItem="SQx-xV-IZt" secondAttribute="bottom" constant="19" id="L8i-d5-BkA"/>
+                            <constraint firstItem="q5Z-mI-GOJ" firstAttribute="top" secondItem="cih-c1-ahd" secondAttribute="top" id="RYG-Se-fYZ"/>
+                            <constraint firstItem="V6z-EV-lHd" firstAttribute="leading" secondItem="SQx-xV-IZt" secondAttribute="leading" id="Riv-OV-t5a"/>
+                            <constraint firstItem="NF4-Iw-uVo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="13" id="Rnj-1e-0K5"/>
+                            <constraint firstItem="ZRy-do-zby" firstAttribute="leading" secondItem="97v-n9-od3" secondAttribute="leading" id="X5m-Pd-Cg2"/>
+                            <constraint firstItem="ZRy-do-zby" firstAttribute="top" secondItem="e6d-J9-dDm" secondAttribute="top" id="XAF-HK-dQo"/>
+                            <constraint firstItem="ZRy-do-zby" firstAttribute="leading" secondItem="q5Z-mI-GOJ" secondAttribute="leading" id="Xne-ib-eUP"/>
+                            <constraint firstItem="mmX-vn-gf2" firstAttribute="leading" secondItem="e6d-J9-dDm" secondAttribute="leading" id="Y2Z-bT-kSv"/>
+                            <constraint firstItem="dve-hv-wRJ" firstAttribute="leading" secondItem="NF4-Iw-uVo" secondAttribute="leading" id="Z8s-s9-YmL"/>
+                            <constraint firstItem="SQx-xV-IZt" firstAttribute="trailing" secondItem="V6z-EV-lHd" secondAttribute="trailing" id="azL-7i-Xtj"/>
+                            <constraint firstItem="mmX-vn-gf2" firstAttribute="top" secondItem="97v-n9-od3" secondAttribute="top" id="duD-Nm-muf"/>
+                            <constraint firstItem="hgP-sU-ARa" firstAttribute="leading" secondItem="dve-hv-wRJ" secondAttribute="leading" id="eHL-D0-8Y3"/>
+                            <constraint firstItem="mmX-vn-gf2" firstAttribute="leading" secondItem="hgP-sU-ARa" secondAttribute="leading" id="g2G-A0-dhC"/>
+                            <constraint firstItem="mmX-vn-gf2" firstAttribute="top" secondItem="cih-c1-ahd" secondAttribute="bottom" constant="8" id="jAN-cS-gzi"/>
+                            <constraint firstItem="4xt-6k-Kdp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="m3s-A6-Iro"/>
+                            <constraint firstItem="V6z-EV-lHd" firstAttribute="leading" secondItem="NF4-Iw-uVo" secondAttribute="trailing" constant="40" id="p4K-KI-Zll"/>
+                            <constraint firstItem="NF4-Iw-uVo" firstAttribute="top" secondItem="V6z-EV-lHd" secondAttribute="top" id="qzU-89-Qre"/>
+                            <constraint firstItem="49B-SR-gzp" firstAttribute="leading" secondItem="SQx-xV-IZt" secondAttribute="leading" id="tyP-hO-Wd1"/>
+                            <constraint firstItem="cih-c1-ahd" firstAttribute="top" secondItem="hgP-sU-ARa" secondAttribute="bottom" constant="31" id="vnC-eI-Udo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fairy" destination="49B-SR-gzp" id="YaB-lh-8v5"/>
+                        <outlet property="percentamount" destination="SQx-xV-IZt" id="NXP-yN-p3K"/>
+                        <outlet property="percentdue" destination="q5Z-mI-GOJ" id="fve-6F-N5m"/>
+                        <outlet property="totaldue" destination="97v-n9-od3" id="V9F-dc-DBG"/>
+                        <outlet property="totalpp" destination="ZRy-do-zby" id="D04-3j-B0i"/>
+                        <outlet property="travelamount" destination="V6z-EV-lHd" id="gYs-wh-Xah"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="247"/>
+        </scene>
+    </scenes>
+</document>

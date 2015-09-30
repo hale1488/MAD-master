@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Lab_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="CFN-gN-Qk4">
+                                <rect key="frame" x="-30" y="33" width="660" height="232"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How the Elephant Turned Pink!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFz-vP-KiV">
+                                <rect key="frame" x="167" y="289" width="237" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="awK-wr-MrZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="QH5-QK-egC">
+                                <rect key="frame" x="152" y="341" width="281" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="xLk-E6-816"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First He Blushed"/>
+                                    <segment title="Then He Turned Pink"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeinfo:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Jut-YM-8Rf"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="He Sneezed!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qch-SG-Zp1">
+                                <rect key="frame" x="105" y="419" width="98" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="XS4-jT-kPR"/>
+                                    <constraint firstAttribute="height" constant="21" id="ahc-8w-ws4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="6" maxValue="22" translatesAutoresizingMaskIntoConstraints="NO" id="iWw-DF-28N">
+                                <rect key="frame" x="248" y="415" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="tNd-7G-8CL"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changefontsize:" destination="vXZ-lx-hvc" eventType="valueChanged" id="oNY-CG-9g9"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pFz-vP-KiV" firstAttribute="centerX" secondItem="CFN-gN-Qk4" secondAttribute="centerX" constant="-14.5" id="6pQ-Le-ijV"/>
+                            <constraint firstItem="CFN-gN-Qk4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-46" id="AWA-lQ-WlG"/>
+                            <constraint firstItem="QH5-QK-egC" firstAttribute="centerX" secondItem="pFz-vP-KiV" secondAttribute="centerX" constant="7" id="DdM-zB-m7Y"/>
+                            <constraint firstItem="qch-SG-Zp1" firstAttribute="top" secondItem="QH5-QK-egC" secondAttribute="bottom" constant="50" id="LDS-00-AF9"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qch-SG-Zp1" secondAttribute="bottom" constant="160" id="Qqt-x8-1Jp"/>
+                            <constraint firstItem="pFz-vP-KiV" firstAttribute="top" secondItem="CFN-gN-Qk4" secondAttribute="bottom" constant="24" id="Sbb-91-0ph"/>
+                            <constraint firstItem="QH5-QK-egC" firstAttribute="leading" secondItem="qch-SG-Zp1" secondAttribute="leading" id="UrT-TM-3tg"/>
+                            <constraint firstItem="CFN-gN-Qk4" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="YBb-T4-mCt"/>
+                            <constraint firstItem="CFN-gN-Qk4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="13" id="fmf-P9-o19"/>
+                            <constraint firstItem="QH5-QK-egC" firstAttribute="top" secondItem="pFz-vP-KiV" secondAttribute="bottom" constant="31" id="g32-ES-q8q"/>
+                            <constraint firstItem="QH5-QK-egC" firstAttribute="trailing" secondItem="iWw-DF-28N" secondAttribute="trailing" id="igo-wM-f7i"/>
+                            <constraint firstItem="iWw-DF-28N" firstAttribute="top" secondItem="QH5-QK-egC" secondAttribute="bottom" constant="46" id="rwN-8y-u6g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="elephantimage" destination="CFN-gN-Qk4" id="cBM-bR-4Zw"/>
+                        <outlet property="fontsizelabel" destination="qch-SG-Zp1" id="9I3-dA-jZg"/>
+                        <outlet property="imagecontrol" destination="QH5-QK-egC" id="a7w-wn-FRp"/>
+                        <outlet property="titlelabel" destination="pFz-vP-KiV" id="cT7-Mr-aUx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="elephant" width="400" height="400"/>
+    </resources>
+</document>
